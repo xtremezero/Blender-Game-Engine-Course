@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Game Development Curriculum — 3D to Engine Architecture</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f5792a'/%3E%3Ctext x='16' y='23' font-size='19' font-weight='bold' text-anchor='middle' fill='%2314161a' font-family='monospace'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="progressbar"></div>
+  <div id="stage"><div class="slide-slot"></div></div>
+
+  <div id="toc">
+    <div class="toc-head">
+      <h3>Curriculum Contents <button id="toc-close" title="Close (Esc / T)">&#10005;</button></h3>
+      <input id="search" type="text" placeholder="Search slides&hellip;  ( / )" autocomplete="off" spellcheck="false">
+      <div id="search-info"></div>
+    </div>
+    <div class="toc-body" id="toc-body"></div>
+  </div>
+  <div id="toc-backdrop"></div>
+
+  <div id="overview">
+    <div class="ov-head">
+      <h3>Slide Overview</h3>
+      <input id="ov-search" type="text" placeholder="Filter&hellip;" autocomplete="off" spellcheck="false"
+             style="background:#171c27;color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:8px 12px;font-size:13px;font-family:inherit;">
+      <button class="fbtn" id="ov-close" title="Close (Esc)">&#10005;</button>
+    </div>
+    <div class="ov-grid" id="ov-grid"></div>
+  </div>
+
+  <div id="help">
+    <div class="help-panel">
+      <h3>Keyboard &amp; Controls</h3>
+      <p class="small">Everything is also available from the bottom toolbar.</p>
+      <div class="help-row"><span>Next slide</span><span><kbd>&#8594;</kbd> <kbd>&#8595;</kbd> <kbd>Space</kbd> <kbd>PgDn</kbd></span></div>
+      <div class="help-row"><span>Previous slide</span><span><kbd>&#8592;</kbd> <kbd>&#8593;</kbd> <kbd>PgUp</kbd></span></div>
+      <div class="help-row"><span>First / last slide</span><span><kbd>Home</kbd> <kbd>End</kbd></span></div>
+      <div class="help-row"><span>Contents sidebar</span><span><kbd>T</kbd></span></div>
+      <div class="help-row"><span>Slide overview grid</span><span><kbd>O</kbd></span></div>
+      <div class="help-row"><span>Search</span><span><kbd>/</kbd></span></div>
+      <div class="help-row"><span>Fullscreen</span><span><kbd>F</kbd></span></div>
+      <div class="help-row"><span>Help</span><span><kbd>?</kbd></span></div>
+      <div class="help-row"><span>Close overlays</span><span><kbd>Esc</kbd></span></div>
+      <div class="help-row"><span>Copy code</span><span>button on every code block</span></div>
+      <div class="help-row"><span>Print / export PDF</span><span><kbd>Ctrl</kbd>+<kbd>P</kbd> or toolbar button</span></div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <button class="fbtn" id="nav-prev" title="Previous ( &#8592; )">&#8249;</button>
+    <button class="fbtn" id="nav-next" title="Next ( &#8594; )">&#8250;</button>
+    <div class="fcounter" id="counter">1 / 1</div>
+    <div class="fsep"></div>
+    <div class="fchapter" id="fchapter"></div>
+    <div class="fprogress" id="fprogress"></div>
+    <div class="fsep"></div>
+    <button class="fbtn" id="btn-toc" title="Contents ( T )">&#9776;</button>
+    <button class="fbtn" id="btn-overview" title="Overview ( O )">&#9638;</button>
+    <button class="fbtn" id="btn-fullscreen" title="Fullscreen ( F )">&#9974;</button>
+    <button class="fbtn" id="btn-help" title="Help ( ? )">?</button>
+    <button class="fbtn" id="btn-print" title="Print / export PDF">&#8983;</button>
+    <button class="fbtn" id="btn-reset" title="Reset progress">&#8635;</button>
+  </div>
+
+  <!-- Slide content registry (order matters) -->
+  <script src="js/slides/meta.js"></script>
+  <script src="js/slides/ch01.js"></script>
+  <script src="js/slides/ch02.js"></script>
+  <script src="js/slides/ch03.js"></script>
+  <script src="js/slides/ch04.js"></script>
+  <script src="js/slides/ch05.js"></script>
+  <script src="js/slides/ch06.js"></script>
+  <script src="js/slides/ch07.js"></script>
+  <script src="js/slides/ch08.js"></script>
+  <script src="js/slides/ch09.js"></script>
+  <script src="js/slides/ch10.js"></script>
+  <script src="js/slides/ch11.js"></script>
+  <script src="js/slides/ch12.js"></script>
+  <script src="js/slides/ch13a.js"></script>
+  <script src="js/slides/ch13b.js"></script>
+  <script src="js/slides/ch14.js"></script>
+  <!-- Engine last: reads the SLIDES registry -->
+  <script src="js/app.js"></script>
+</body>
+</html>
